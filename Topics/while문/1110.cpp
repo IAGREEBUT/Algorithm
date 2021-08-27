@@ -16,7 +16,7 @@ using namespace std;
 int main() {
 
     int num, n, original;
-    int cnt = 0;
+    int cnt = 0;ㄷ
     cin >> num;
 
     original = num;
