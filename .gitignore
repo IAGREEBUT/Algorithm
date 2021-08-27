@@ -82,6 +82,7 @@
 # CMake
 cmake-build-*/
 
+
 # Mongo Explorer plugin
 .idea/**/mongoSettings.xml
 
@@ -156,5 +157,9 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+
+# etc
+*.txt
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,clion+all,c++
