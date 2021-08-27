@@ -34,3 +34,24 @@ int main() {
 
 
 
+
+//int main(){
+//
+//    int A;
+//    int B;
+//
+//    std::cin>>A>>B;
+//
+//    if(A>B){
+//        std::cout<<">"<<std::endl;
+//    }else if(B>A){
+//        std::cout<<"<"<<std::endl;
+//    }else
+//    {
+//        std::cout<<"=="<<std::endl;
+//    }
+//
+//
+//
+//}
+
