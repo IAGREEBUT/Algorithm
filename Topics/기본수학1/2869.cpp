@@ -15,24 +15,24 @@
 
 using namespace std;
 
-int solution(int v, int a, int b) {
-
-    int h = 0;
-    int day = 1;
-
-    while (true) {
-
-        h += a;
-        if (h >= v) break;
-
-        h -= b;
-        day++;
-
-    }
-
-    return day;
-
-}
+//int solution(int v, int a, int b) {
+//
+//    int h = 0;
+//    int day = 1;
+//
+//    while (true) {
+//
+//        h += a;
+//        if (h >= v) break;
+//
+//        h -= b;
+//        day++;
+//
+//    }
+//
+//    return day;
+//
+//}
 
 int main() {
 
@@ -41,8 +41,7 @@ int main() {
     cin >> A >> B >> V;
 
     int sol;
-    sol = ceil(V - A / (A - B));
-
+    sol = ceil((double) (V - A) / (double) (A - B));
 
     cout << sol + 1 << "\n";
 
