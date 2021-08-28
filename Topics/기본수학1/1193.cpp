@@ -37,9 +37,13 @@ void solution(int x) {
 
     m = x - min;
 
-
-    a = 1 + m;
-    b = n - m;
+    if (n % 2 == 0) { //짝수 층일 때,
+        a = 1 + m;
+        b = n - m;
+    } else {
+        a = n - m;
+        b = 1 + m;
+    }
 
     cout << a << "/" << b << "\n";
 
