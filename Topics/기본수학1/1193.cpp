@@ -35,10 +35,11 @@ void solution(int x) {
 
     }
 
-    m = x % n;
+    m = x - min;
 
-    a = 1 + (m - 1);
-    b = n - (m - 1);
+
+    a = 1 + m;
+    b = n - m;
 
     cout << a << "/" << b << "\n";
 
