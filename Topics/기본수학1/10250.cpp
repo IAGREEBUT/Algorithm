@@ -33,16 +33,9 @@ int main() {
 
         if (x == 0) x = h;
 
-        string yy = to_string(y);
-        string xx = to_string(x);
 
-
-        if (y < 10) res.push_back(xx + "0" + yy);
-        else res.push_back(xx + yy);
-    }
-
-    for (int i = 0; i < n; i++) {
-        cout << res[i] << "\n";
+        if (y < 10) cout << x << "0" << y << "\n";
+        else cout << x << y << "\n";
     }
 
 
