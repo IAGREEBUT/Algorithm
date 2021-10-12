@@ -23,7 +23,7 @@ bool binarySearch(int left, int right, int n) {
 
 }
 
-// while문 
+// while문
 bool binarySearch2(int left, int right, int target) {
     while (left <= right) { //left 포인터가 right 포인터보다 뒤에 있으면 break
         int mid = (left + right) / 2; //중간값
