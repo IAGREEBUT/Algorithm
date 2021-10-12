@@ -10,7 +10,7 @@ using namespace std;
 
 vector<int> v;
 
-
+//찾고자 하는 X를 "초과"하는 수가 처음으로 나오는 위치
 int lowerBound(int left, int right, int target) {
 
     while (left <= right) {
@@ -45,6 +45,7 @@ int lowerBound(int left, int right, int target) {
     return right + 1;
 }
 
+//찾고자하는 X값 "이상"의 수가 최초로 나오는 위치 
 int upperBound(int left, int right, int target) {
 
     while (left <= right) {
@@ -101,8 +102,8 @@ int main() {
     while (m--) {
         cin >> num;
 
-        //upperBound : 마지막으로 나온 num index의 + 1 (그다음)
-        //lowerBound : 최초로 나온 num의 index
+        //upperBound : 마지막으로 나온 num index의 + 1 (그다음) -> 찾고자 하는 X를 "초과"하는 수가 처음으로 나오는 위치
+        //lowerBound : 최초로 나온 num의 index -> 찾고자하는 X값 "이상"의 수가 최초로 나오는 위치
 
         cout << upperBound(0, n - 1, num) - lowerBound(0, n - 1, num) << " ";
 
