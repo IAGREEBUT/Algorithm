@@ -103,7 +103,7 @@ int main() {
     vector<int> bfs_res = bfs(n, v);
 
 //    //dfs결과 출력
-    for (int i = 0; i < dfs_res.size(); i++) {
+    for (int i = 0; i < dfs_res.size(); i++) { //n이 아니라 dfs_res.size인 이유는 노드를 전부 방문하지 못할 수도 있기 때문( edge로 연결이 없는 경우 등) 
         cout << dfs_res[i] << " ";
     }
     cout << "\n";
