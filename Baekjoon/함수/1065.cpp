@@ -9,7 +9,7 @@ using namespace std;
 
 
 //한수인지 검사하는 함수
-bool isHan(int n) {//최소 3자리 수 
+bool isHan(int n) {//최소 3자리 수
 
     string str = to_string(n);
 
